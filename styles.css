@@ -866,6 +866,25 @@ nav {
     backdrop-filter: blur(4px);
 }
 
+.ig-embed-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: var(--container-max);
+    margin: 0 auto;
+    align-items: start;
+}
+
+.ig-embed-item {
+    display: flex;
+    justify-content: center;
+}
+
+.ig-embed-item blockquote.instagram-media {
+    margin: 0 !important;
+    width: 100% !important;
+}
+
 .results-cta {
     text-align: center;
     margin-top: 2.5rem;
@@ -1206,6 +1225,10 @@ footer {
 
     .results-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ig-embed-grid {
+        grid-template-columns: 1fr;
     }
 
     .instagram-grid {
