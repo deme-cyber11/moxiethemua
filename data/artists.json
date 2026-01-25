@@ -1,0 +1,156 @@
+{
+  "artists": [
+    {
+      "id": "artist-001",
+      "name": "Jessica Martinez",
+      "slug": "jessica-martinez",
+      "location": {
+        "city": "Austin",
+        "state": "TX",
+        "serviceArea": ["Austin", "Round Rock", "Cedar Park"]
+      },
+      "photo": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=400&q=80",
+      "bio": "With over 8 years of experience in bridal and editorial makeup, Jessica brings a blend of classic elegance and modern artistry to every client.",
+      "specialties": ["Bridal", "Editorial"],
+      "experience": "8 years",
+      "rating": 5.0,
+      "reviewCount": 48,
+      "instagram": "@jessicamartinezmua",
+      "services": ["bridal", "events", "editorial"],
+      "certifications": ["International Make-Up Association"]
+    },
+    {
+      "id": "artist-002",
+      "name": "Aaliyah Johnson",
+      "slug": "aaliyah-johnson",
+      "location": {
+        "city": "Houston",
+        "state": "TX",
+        "serviceArea": ["Houston", "Sugar Land", "The Woodlands"]
+      },
+      "photo": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&q=80",
+      "bio": "Aaliyah specializes in creating stunning bridal looks that celebrate every skin tone. Her warm approach puts nervous brides at ease.",
+      "specialties": ["Bridal", "Events"],
+      "experience": "6 years",
+      "rating": 5.0,
+      "reviewCount": 36,
+      "instagram": "@aaliyahjmua",
+      "services": ["bridal", "events"],
+      "certifications": ["Licensed Cosmetologist"]
+    },
+    {
+      "id": "artist-003",
+      "name": "Sophia Chen",
+      "slug": "sophia-chen",
+      "location": {
+        "city": "Dallas",
+        "state": "TX",
+        "serviceArea": ["Dallas", "Plano", "Frisco"]
+      },
+      "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80",
+      "bio": "Sophia is a high-fashion editorial artist with experience in major publications. She brings runway-level artistry to every shoot.",
+      "specialties": ["Editorial", "Commercial"],
+      "experience": "10 years",
+      "rating": 4.9,
+      "reviewCount": 52,
+      "instagram": "@sophiachenmua",
+      "services": ["editorial", "commercial"],
+      "certifications": ["MAC Pro Artist"]
+    },
+    {
+      "id": "artist-004",
+      "name": "Maya Williams",
+      "slug": "maya-williams",
+      "location": {
+        "city": "San Antonio",
+        "state": "TX",
+        "serviceArea": ["San Antonio", "New Braunfels", "Boerne"]
+      },
+      "photo": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+      "bio": "Maya is passionate about education and empowering clients with makeup skills. She also creates breathtaking bridal looks.",
+      "specialties": ["Bridal", "Lessons"],
+      "experience": "5 years",
+      "rating": 5.0,
+      "reviewCount": 29,
+      "instagram": "@mayawmua",
+      "services": ["bridal", "lessons"],
+      "certifications": ["Certified Makeup Educator"]
+    },
+    {
+      "id": "artist-005",
+      "name": "Lauren Davis",
+      "slug": "lauren-davis",
+      "location": {
+        "city": "Austin",
+        "state": "TX",
+        "serviceArea": ["Austin", "Lakeway", "Dripping Springs"]
+      },
+      "photo": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=400&q=80",
+      "bio": "Lauren is known for her natural, effortless bridal looks. She believes less is more and focuses on enhancing natural beauty.",
+      "specialties": ["Bridal", "Events"],
+      "experience": "7 years",
+      "rating": 4.9,
+      "reviewCount": 41,
+      "instagram": "@laurendavismua",
+      "services": ["bridal", "events"],
+      "certifications": ["Licensed Esthetician"]
+    },
+    {
+      "id": "artist-006",
+      "name": "Olivia Thompson",
+      "slug": "olivia-thompson",
+      "location": {
+        "city": "Dallas",
+        "state": "TX",
+        "serviceArea": ["Dallas", "Fort Worth", "Arlington"]
+      },
+      "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
+      "bio": "Olivia is a versatile artist who excels in bridal, editorial, and event makeup. Her attention to detail is unmatched.",
+      "specialties": ["Bridal", "Events", "Editorial"],
+      "experience": "9 years",
+      "rating": 5.0,
+      "reviewCount": 67,
+      "instagram": "@oliviatmua",
+      "services": ["bridal", "events", "editorial"],
+      "certifications": ["International Make-Up Association", "MAC Pro Artist"]
+    },
+    {
+      "id": "artist-007",
+      "name": "Brianna Scott",
+      "slug": "brianna-scott",
+      "location": {
+        "city": "Houston",
+        "state": "TX",
+        "serviceArea": ["Houston", "Katy", "Pearland"]
+      },
+      "photo": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80",
+      "bio": "Brianna brings commercial-quality artistry to bridal clients. Her background in advertising gives her a keen eye for camera-ready looks.",
+      "specialties": ["Bridal", "Commercial"],
+      "experience": "6 years",
+      "rating": 4.8,
+      "reviewCount": 33,
+      "instagram": "@briannascottmua",
+      "services": ["bridal", "commercial"],
+      "certifications": ["Licensed Cosmetologist"]
+    },
+    {
+      "id": "artist-008",
+      "name": "Taylor Rodriguez",
+      "slug": "taylor-rodriguez",
+      "location": {
+        "city": "Fort Worth",
+        "state": "TX",
+        "serviceArea": ["Fort Worth", "Southlake", "Grapevine"]
+      },
+      "photo": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
+      "bio": "Taylor is the newest addition to MoxietheMua and is already making waves with her creative event looks and personalized lessons.",
+      "specialties": ["Bridal", "Events", "Lessons"],
+      "experience": "4 years",
+      "rating": 5.0,
+      "reviewCount": 22,
+      "instagram": "@taylorrmua",
+      "services": ["bridal", "events", "lessons"],
+      "certifications": ["Certified Makeup Artist"]
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | MoxietheMua — Bridal, Events, Editorial & Education</title>
+    <meta name="description" content="Explore MoxietheMua services: bridal makeup, special events, editorial & commercial artistry, and makeup education across Texas.">
+    <meta property="og:title" content="Services | MoxietheMua">
+    <meta property="og:description" content="Bridal, events, editorial & education — premium makeup artistry across Texas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .service-detail { padding: var(--section-padding); }
+        .service-detail:nth-child(even) { background: var(--color-surface-alt); }
+        .service-detail:nth-child(odd) { background: var(--color-surface); }
+        .service-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; max-width: var(--container-max); margin: 0 auto; }
+        .service-detail:nth-child(even) .service-detail-grid { direction: rtl; }
+        .service-detail:nth-child(even) .service-detail-grid > * { direction: ltr; }
+        .service-detail-image img { width: 100%; height: 450px; object-fit: cover; }
+        .service-detail-content .section-label { text-align: left; }
+        .service-detail-content h2 { font-size: 2.25rem; margin-bottom: 1rem; font-weight: 400; }
+        .service-detail-content > p { color: var(--color-text-muted); line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.05rem; }
+        .feature-checklist { list-style: none; margin-bottom: 2rem; }
+        .feature-checklist li { display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0; font-size: 1rem; color: var(--color-text); }
+        .feature-checklist li svg { width: 20px; height: 20px; stroke: var(--color-success); fill: none; stroke-width: 2; flex-shrink: 0; }
+        .pricing-note { padding: var(--section-padding); background: var(--color-accent); text-align: center; }
+        .pricing-note h2 { font-size: 2rem; margin-bottom: 1rem; font-weight: 400; }
+        .pricing-note p { color: var(--color-text-muted); font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.7; }
+        .find-cta { padding: var(--section-padding); background: var(--color-secondary); text-align: center; }
+        .find-cta h2 { font-size: 2rem; color: var(--color-text-light); margin-bottom: 1rem; font-weight: 400; }
+        .find-cta p { color: rgba(255,255,255,0.8); margin-bottom: 2rem; font-size: 1.1rem; }
+        @media (max-width: 768px) {
+            .service-detail-grid { grid-template-columns: 1fr; gap: 2rem; }
+            .service-detail:nth-child(even) .service-detail-grid { direction: ltr; }
+            .service-detail-image img { height: 300px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <nav>
+            <a href="index.html" class="logo"><span class="logo-text">Moxie<span>theMua</span></span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="artists.html">Find an Artist</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="artists.html" class="nav-cta">Book Now</a></li>
+            </ul>
+            <button class="menu-toggle" id="hamburger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+        </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <h1>Our Services</h1>
+        <p>From bridal elegance to editorial artistry — we do it all.</p>
+    </section>
+
+    <!-- BRIDAL SERVICES -->
+    <section class="service-detail fade-in">
+        <div class="service-detail-grid">
+            <div class="service-detail-image">
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80" alt="Bridal makeup services" loading="lazy">
+            </div>
+            <div class="service-detail-content">
+                <p class="section-label">Bridal</p>
+                <h2>Your Perfect Bridal Look</h2>
+                <p>Your wedding day is one of the most important days of your life. Our artists create timeless, long-lasting looks that photograph beautifully and last from the first kiss to the last dance.</p>
+                <ul class="feature-checklist">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Bridal Makeup Application</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Bridal Trial Session</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Bridal Party Packages (Bridesmaids, Mother of Bride)</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Touch-up Kit Add-on</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Destination Wedding Services</li>
+                </ul>
+                <a href="artists.html" class="btn btn-primary">Find a Bridal Artist</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIAL EVENTS -->
+    <section class="service-detail fade-in">
+        <div class="service-detail-grid">
+            <div class="service-detail-image">
+                <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" alt="Special event makeup" loading="lazy">
+            </div>
+            <div class="service-detail-content">
+                <p class="section-label">Events</p>
+                <h2>Unforgettable Event Looks</h2>
+                <p>Whether it's prom night, a quincea&ntilde;era, or an engagement shoot, our artists create looks that make every occasion unforgettable.</p>
+                <ul class="feature-checklist">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Prom &amp; Homecoming</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Quincea&ntilde;era</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Photoshoots &amp; Engagement Sessions</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Date Night &amp; Anniversary</li>
+                </ul>
+                <a href="artists.html" class="btn btn-primary">Find an Event Artist</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDITORIAL & COMMERCIAL -->
+    <section class="service-detail fade-in">
+        <div class="service-detail-grid">
+            <div class="service-detail-image">
+                <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=800&q=80" alt="Editorial makeup artistry" loading="lazy">
+            </div>
+            <div class="service-detail-content">
+                <p class="section-label">Editorial &amp; Commercial</p>
+                <h2>Camera-Ready Artistry</h2>
+                <p>Our network includes artists with high-fashion and commercial experience, bringing runway-level artistry to every shoot and production.</p>
+                <ul class="feature-checklist">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Fashion Editorials</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Commercial &amp; Advertising Shoots</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Professional Headshots</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> TV &amp; Film</li>
+                </ul>
+                <a href="artists.html" class="btn btn-primary">Find an Editorial Artist</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAKEUP EDUCATION -->
+    <section class="service-detail fade-in">
+        <div class="service-detail-grid">
+            <div class="service-detail-image">
+                <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=800&q=80" alt="Makeup education lessons" loading="lazy">
+            </div>
+            <div class="service-detail-content">
+                <p class="section-label">Education</p>
+                <h2>Learn From the Best</h2>
+                <p>Want to master your own makeup routine? Our artists offer personalized lessons and workshops to help you build confidence and skill.</p>
+                <ul class="feature-checklist">
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> One-on-One Lessons</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Group Workshops</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Bridal Self-Application Class</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Product Guidance &amp; Recommendations</li>
+                </ul>
+                <a href="artists.html" class="btn btn-primary">Find an Educator</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING NOTE -->
+    <section class="pricing-note fade-in">
+        <div class="container">
+            <h2>Personalized Pricing</h2>
+            <p>Pricing varies by artist and location. Contact your preferred artist directly for a personalized quote tailored to your needs.</p>
+            <a href="artists.html" class="btn btn-dark">Find an Artist for a Quote</a>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">FAQ</p>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">How far in advance should I book?</button>
+                    <div class="faq-answer">
+                        <p>For weddings, we recommend booking 6-12 months in advance to secure your preferred artist and date. For events, 2-4 weeks notice is usually sufficient, though earlier is always better during peak season.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do you offer bridal trials?</button>
+                    <div class="faq-answer">
+                        <p>Yes! We strongly recommend scheduling a trial session 2-3 months before your wedding day. This gives you and your artist time to perfect the look, discuss any adjustments, and ensure you feel confident and beautiful.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I book multiple artists for my bridal party?</button>
+                    <div class="faq-answer">
+                        <p>Yes, our network makes it easy to book multiple artists for larger bridal parties. Your primary artist can coordinate with colleagues to ensure everyone is taken care of on your big day.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do artists travel to my location?</button>
+                    <div class="faq-answer">
+                        <p>Yes! All MoxietheMua artists offer on-location services. Travel within their standard service area is typically included. For destinations outside their area, a small travel fee may apply.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What products do MoxietheMua artists use?</button>
+                    <div class="faq-answer">
+                        <p>Our artists use premium, long-lasting, professional-grade products that work across all skin types and tones. Brands vary by artist preference, but quality and longevity are always the priority. If you have allergies or sensitivities, let your artist know and they'll accommodate accordingly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIND ARTIST CTA -->
+    <section class="find-cta fade-in">
+        <div class="container">
+            <h2>Ready to Find Your Artist?</h2>
+            <p>Browse our directory of vetted, professional makeup artists across Texas.</p>
+            <a href="artists.html" class="btn btn-primary">Find an Artist</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo-text">Moxie<span>theMua</span></div>
+                <p>Texas' premier bridal beauty network. Connecting brides with vetted, professional makeup artists across the Lone Star State.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/moxiethemua" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="artists.html">Find an Artist</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="join.html">Join Our Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Bridal Makeup</a></li>
+                    <li><a href="services.html">Special Events</a></li>
+                    <li><a href="services.html">Editorial &amp; Commercial</a></li>
+                    <li><a href="services.html">Makeup Education</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/moxiethemua" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MoxietheMua. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active')); });
+        navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); hamburger.setAttribute('aria-expanded', 'false'); }); });
+        const fadeObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const wasActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                if (!wasActive) item.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

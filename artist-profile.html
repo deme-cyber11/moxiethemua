@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica Martinez | MoxietheMua Artist — Austin, TX</title>
+    <meta name="description" content="Book Jessica Martinez, a vetted MoxietheMua bridal and editorial makeup artist serving Austin, Round Rock, and Cedar Park, TX.">
+    <meta property="og:title" content="Jessica Martinez | MoxietheMua Artist">
+    <meta property="og:description" content="Premium bridal & editorial makeup artist in Austin, TX.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .artist-header { margin-top: 72px; padding: 4rem 2rem; background: var(--color-surface-alt); border-bottom: 1px solid var(--color-border); }
+        .artist-header-inner { max-width: var(--container-max); margin: 0 auto; display: flex; gap: 3rem; align-items: center; }
+        .artist-photo { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 4px solid var(--color-primary); flex-shrink: 0; }
+        .artist-header-info h1 { font-size: 2.5rem; font-weight: 400; margin-bottom: 0.5rem; }
+        .artist-header-location { display: flex; align-items: center; gap: 0.5rem; color: var(--color-text-muted); font-size: 1.1rem; margin-bottom: 0.25rem; }
+        .artist-header-location svg { width: 18px; height: 18px; fill: var(--color-primary); }
+        .artist-service-areas { color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1rem; }
+        .artist-header-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+        .artist-header-rating { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 1rem; }
+        .artist-header-rating .stars { color: var(--color-primary); font-size: 1.2rem; }
+        .artist-instagram { color: var(--color-primary); font-weight: 500; margin-bottom: 1.5rem; display: inline-block; }
+        .artist-header-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        .profile-layout { display: grid; grid-template-columns: 1fr 380px; gap: 3rem; max-width: var(--container-max); margin: 0 auto; padding: 3rem 2rem; }
+        .profile-main section { margin-bottom: 3rem; }
+        .profile-main h2 { font-size: 1.75rem; margin-bottom: 1.5rem; font-weight: 400; padding-bottom: 0.75rem; border-bottom: 1px solid var(--color-border); }
+        .profile-main .bio p { color: var(--color-text-muted); line-height: 1.8; margin-bottom: 1rem; font-size: 1.05rem; }
+
+        .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+        .portfolio-grid img { width: 100%; height: 220px; object-fit: cover; cursor: pointer; transition: opacity 0.2s; }
+        .portfolio-grid img:hover { opacity: 0.85; }
+
+        .pricing-list { list-style: none; }
+        .pricing-item { display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 0; border-bottom: 1px solid var(--color-border); }
+        .pricing-item:last-child { border-bottom: none; }
+        .pricing-name { font-weight: 500; font-size: 1.05rem; }
+        .pricing-price { color: var(--color-primary); font-weight: 600; font-size: 1rem; }
+
+        .review-card { padding: 1.5rem 0; border-bottom: 1px solid var(--color-border); }
+        .review-card:last-child { border-bottom: none; }
+        .review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+        .review-stars { color: var(--color-primary); }
+        .review-service { background: var(--color-accent); padding: 0.2rem 0.6rem; font-size: 0.75rem; font-weight: 500; border-radius: 50px; }
+        .review-text { color: var(--color-text-muted); line-height: 1.7; margin-bottom: 0.75rem; font-style: italic; }
+        .review-author { font-weight: 600; font-size: 0.9rem; }
+        .review-date { color: var(--color-text-muted); font-size: 0.85rem; }
+
+        .profile-sidebar { position: relative; }
+        .booking-form-wrapper { position: sticky; top: 100px; }
+        .booking-form { background: var(--color-surface); border: 1px solid var(--color-border); padding: 2rem; margin-bottom: 2rem; }
+        .booking-form h3 { font-size: 1.35rem; margin-bottom: 1.5rem; text-align: center; font-weight: 400; }
+        .booking-form .btn { width: 100%; justify-content: center; }
+
+        .sidebar-info { background: var(--color-surface); border: 1px solid var(--color-border); padding: 1.5rem; }
+        .sidebar-info h4 { font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; }
+        .sidebar-detail { display: flex; justify-content: space-between; padding: 0.5rem 0; font-size: 0.95rem; border-bottom: 1px solid var(--color-border); }
+        .sidebar-detail:last-child { border-bottom: none; }
+        .sidebar-detail span:first-child { color: var(--color-text-muted); }
+
+        .other-artists { padding: var(--section-padding); background: var(--color-surface-alt); }
+        .other-artists .artists-grid { grid-template-columns: repeat(3, 1fr); }
+
+        @media (max-width: 1024px) {
+            .profile-layout { grid-template-columns: 1fr; }
+            .booking-form-wrapper { position: static; }
+        }
+        @media (max-width: 768px) {
+            .artist-header-inner { flex-direction: column; text-align: center; }
+            .artist-header-tags, .artist-header-ctas { justify-content: center; }
+            .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+            .other-artists .artists-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <nav>
+            <a href="index.html" class="logo"><span class="logo-text">Moxie<span>theMua</span></span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="artists.html">Find an Artist</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="artists.html" class="nav-cta">Book Now</a></li>
+            </ul>
+            <button class="menu-toggle" id="hamburger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+        </nav>
+    </header>
+
+    <!-- ARTIST HEADER -->
+    <section class="artist-header">
+        <div class="artist-header-inner">
+            <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=600&q=80" alt="Jessica Martinez" class="artist-photo">
+            <div class="artist-header-info">
+                <h1>Jessica Martinez</h1>
+                <div class="artist-header-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="white"></circle></svg>
+                    Austin, TX
+                </div>
+                <div class="artist-service-areas">Serving: Austin, Round Rock, Cedar Park</div>
+                <div class="artist-header-tags">
+                    <span class="specialty-tag">Bridal</span>
+                    <span class="specialty-tag">Editorial</span>
+                </div>
+                <div class="artist-header-rating">
+                    <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <span>5.0 (48 reviews)</span>
+                </div>
+                <a href="https://www.instagram.com/jessicamartinezmua" target="_blank" rel="noopener" class="artist-instagram">@jessicamartinezmua</a>
+                <div class="artist-header-ctas">
+                    <a href="#booking" class="btn btn-primary">Book This Artist</a>
+                    <a href="contact.html" class="btn btn-outline-dark">Send Message</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFILE LAYOUT -->
+    <div class="profile-layout">
+
+        <!-- MAIN CONTENT -->
+        <div class="profile-main">
+
+            <!-- About -->
+            <section class="bio">
+                <h2>About Jessica</h2>
+                <p>With over 8 years of experience in bridal and editorial makeup, Jessica brings a blend of classic elegance and modern artistry to every client.</p>
+                <p>Jessica's approach centers on enhancing your natural beauty while creating a look that's uniquely you. She takes the time to understand each client's vision, skin type, and personal style to deliver results that feel both elevated and authentic.</p>
+                <p>Whether you're walking down the aisle or stepping in front of the camera, Jessica ensures your look is flawless, long-lasting, and photograph-ready. Her calm, warm demeanor puts even the most nervous brides at ease.</p>
+            </section>
+
+            <!-- Portfolio -->
+            <section>
+                <h2>Portfolio</h2>
+                <div class="portfolio-grid">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=80" alt="Bridal look 1" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?auto=format&fit=crop&w=400&q=80" alt="Bridal look 2" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=400&q=80" alt="Editorial look 1" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=400&q=80" alt="Makeup application" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=400&q=80" alt="Bridal glam" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=400&q=80" alt="Beauty products" loading="lazy">
+                </div>
+            </section>
+
+            <!-- Services & Pricing -->
+            <section>
+                <h2>Services &amp; Pricing</h2>
+                <ul class="pricing-list">
+                    <li class="pricing-item">
+                        <span class="pricing-name">Bridal Makeup Application</span>
+                        <span class="pricing-price">Starting at $250</span>
+                    </li>
+                    <li class="pricing-item">
+                        <span class="pricing-name">Bridal Trial Session</span>
+                        <span class="pricing-price">Starting at $150</span>
+                    </li>
+                    <li class="pricing-item">
+                        <span class="pricing-name">Bridal Party (per person)</span>
+                        <span class="pricing-price">Starting at $125</span>
+                    </li>
+                    <li class="pricing-item">
+                        <span class="pricing-name">Editorial / Commercial</span>
+                        <span class="pricing-price">Contact for rates</span>
+                    </li>
+                    <li class="pricing-item">
+                        <span class="pricing-name">Touch-up Kit Add-on</span>
+                        <span class="pricing-price">$50</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Reviews -->
+            <section>
+                <h2>Reviews</h2>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <span class="review-service">Bridal</span>
+                    </div>
+                    <p class="review-text">"Jessica was an absolute dream. She listened to everything I wanted and delivered a look even more beautiful than I imagined. My makeup lasted through an outdoor Texas ceremony and a night of dancing!"</p>
+                    <span class="review-author">Rachel M.</span>
+                    <span class="review-date"> &mdash; October 2025</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <span class="review-service">Bridal Trial</span>
+                    </div>
+                    <p class="review-text">"I felt so at ease during my trial session. Jessica took the time to really understand what I wanted and nailed it on the first try. Can't wait for my wedding day!"</p>
+                    <span class="review-author">Emily S.</span>
+                    <span class="review-date"> &mdash; September 2025</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <span class="review-service">Editorial</span>
+                    </div>
+                    <p class="review-text">"We hired Jessica for a magazine shoot and she completely understood the creative direction. Professional, talented, and a joy to work with on set."</p>
+                    <span class="review-author">Studio Bloom Photography</span>
+                    <span class="review-date"> &mdash; August 2025</span>
+                </div>
+            </section>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="profile-sidebar">
+            <div class="booking-form-wrapper">
+                <div class="booking-form" id="booking">
+                    <h3>Book Jessica Martinez</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="bookName">Your Name</label>
+                            <input type="text" id="bookName" placeholder="Full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookEmail">Email</label>
+                            <input type="email" id="bookEmail" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookPhone">Phone</label>
+                            <input type="tel" id="bookPhone" placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="bookDate">Event Date</label>
+                            <input type="date" id="bookDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookType">Event Type</label>
+                            <select id="bookType" required>
+                                <option value="">Select type</option>
+                                <option value="wedding">Wedding</option>
+                                <option value="bridal-party">Bridal Party</option>
+                                <option value="engagement">Engagement</option>
+                                <option value="editorial">Editorial</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookMessage">Message</label>
+                            <textarea id="bookMessage" placeholder="Tell Jessica about your event..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Booking Request</button>
+                    </form>
+                </div>
+                <div class="sidebar-info">
+                    <h4>Details</h4>
+                    <div class="sidebar-detail"><span>Experience</span><span>8 years</span></div>
+                    <div class="sidebar-detail"><span>Certification</span><span>International Make-Up Association</span></div>
+                    <div class="sidebar-detail"><span>Services</span><span>Bridal, Events, Editorial</span></div>
+                    <div class="sidebar-detail"><span>Travel</span><span>Austin metro area</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OTHER ARTISTS -->
+    <section class="other-artists fade-in">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">More Artists</p>
+                <h2 class="section-title">Other Artists in the Area</h2>
+            </div>
+            <div class="artists-grid">
+                <div class="artist-card">
+                    <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=400&q=80" alt="Lauren Davis" class="artist-image" loading="lazy">
+                    <div class="artist-info">
+                        <h3>Lauren Davis</h3>
+                        <div class="artist-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="white"></circle></svg>
+                            Austin, TX
+                        </div>
+                        <div class="artist-specialties">
+                            <span class="specialty-tag">Bridal</span>
+                            <span class="specialty-tag">Events</span>
+                        </div>
+                        <div class="artist-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span>4.9 (41 reviews)</span>
+                        </div>
+                    </div>
+                    <a href="artist-profile.html" class="artist-cta">View Profile</a>
+                </div>
+                <div class="artist-card">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Maya Williams" class="artist-image" loading="lazy">
+                    <div class="artist-info">
+                        <h3>Maya Williams</h3>
+                        <div class="artist-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="white"></circle></svg>
+                            San Antonio, TX
+                        </div>
+                        <div class="artist-specialties">
+                            <span class="specialty-tag">Bridal</span>
+                            <span class="specialty-tag">Lessons</span>
+                        </div>
+                        <div class="artist-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span>5.0 (29 reviews)</span>
+                        </div>
+                    </div>
+                    <a href="artist-profile.html" class="artist-cta">View Profile</a>
+                </div>
+                <div class="artist-card">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Taylor Rodriguez" class="artist-image" loading="lazy">
+                    <div class="artist-info">
+                        <h3>Taylor Rodriguez</h3>
+                        <div class="artist-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="white"></circle></svg>
+                            Fort Worth, TX
+                        </div>
+                        <div class="artist-specialties">
+                            <span class="specialty-tag">Bridal</span>
+                            <span class="specialty-tag">Events</span>
+                            <span class="specialty-tag">Lessons</span>
+                        </div>
+                        <div class="artist-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span>5.0 (22 reviews)</span>
+                        </div>
+                    </div>
+                    <a href="artist-profile.html" class="artist-cta">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo-text">Moxie<span>theMua</span></div>
+                <p>Texas' premier bridal beauty network. Connecting brides with vetted, professional makeup artists across the Lone Star State.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/moxiethemua" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="artists.html">Find an Artist</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="join.html">Join Our Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Bridal Makeup</a></li>
+                    <li><a href="services.html">Special Events</a></li>
+                    <li><a href="services.html">Editorial &amp; Commercial</a></li>
+                    <li><a href="services.html">Makeup Education</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/moxiethemua" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MoxietheMua. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active')); });
+        navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); hamburger.setAttribute('aria-expanded', 'false'); }); });
+        const fadeObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+    </script>
+
+</body>
+</html>

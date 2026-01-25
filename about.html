@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About MoxietheMua | Our Story & Mission</title>
+    <meta name="description" content="Learn about MoxietheMua — Texas' premier bridal beauty network. Our mission, values, and the story behind connecting brides with elite makeup artists.">
+    <meta property="og:title" content="About MoxietheMua | Our Story & Mission">
+    <meta property="og:description" content="The story behind Texas' premier bridal beauty network.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .story-section { padding: var(--section-padding); background: var(--color-surface); }
+        .story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; max-width: var(--container-max); margin: 0 auto; }
+        .story-image img { width: 100%; height: 500px; object-fit: cover; }
+        .story-content h2 { font-size: 2.5rem; margin-bottom: 1.5rem; font-weight: 400; }
+        .story-content p { color: var(--color-text-muted); line-height: 1.8; margin-bottom: 1.25rem; font-size: 1.05rem; }
+
+        .standards-section { padding: var(--section-padding); background: var(--color-surface-alt); }
+        .standards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: var(--container-max); margin: 0 auto; }
+        .standard-card { background: var(--color-surface); padding: 2.5rem 2rem; text-align: center; border: 1px solid var(--color-border); }
+        .standard-icon { width: 64px; height: 64px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; }
+        .standard-icon svg { width: 48px; height: 48px; stroke: var(--color-primary); fill: none; stroke-width: 1.5; }
+        .standard-card h3 { font-size: 1.35rem; margin-bottom: 0.75rem; }
+        .standard-card p { color: var(--color-text-muted); line-height: 1.7; font-size: 0.95rem; }
+
+        .founder-section { padding: var(--section-padding); background: var(--color-surface); }
+        .founder-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; align-items: center; max-width: var(--container-max); margin: 0 auto; }
+        .founder-image img { width: 100%; height: 450px; object-fit: cover; }
+        .founder-content h2 { font-size: 2.5rem; margin-bottom: 1.5rem; font-weight: 400; }
+        .founder-content p { color: var(--color-text-muted); line-height: 1.8; margin-bottom: 1.25rem; }
+
+        .dual-cta { padding: var(--section-padding); background: var(--color-surface-alt); }
+        .dual-cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 900px; margin: 0 auto; }
+        .cta-box { background: var(--color-surface); padding: 3rem 2.5rem; text-align: center; border: 1px solid var(--color-border); }
+        .cta-box h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+        .cta-box p { color: var(--color-text-muted); margin-bottom: 1.5rem; line-height: 1.7; }
+
+        @media (max-width: 768px) {
+            .story-grid, .founder-grid, .dual-cta-grid, .standards-grid { grid-template-columns: 1fr; }
+            .story-image img, .founder-image img { height: 350px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <nav>
+            <a href="index.html" class="logo"><span class="logo-text">Moxie<span>theMua</span></span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="artists.html">Find an Artist</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="artists.html" class="nav-cta">Book Now</a></li>
+            </ul>
+            <button class="menu-toggle" id="hamburger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+        </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <h1>The MoxietheMua Story</h1>
+        <p>Bringing premium bridal artistry to every corner of Texas.</p>
+    </section>
+
+    <!-- BRAND STORY -->
+    <section class="story-section fade-in">
+        <div class="story-grid">
+            <div class="story-image">
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80" alt="Bridal makeup artistry" loading="lazy">
+            </div>
+            <div class="story-content">
+                <p class="section-label">Our Story</p>
+                <h2>Born from a Passion for Bridal Beauty</h2>
+                <p>MoxietheMua was founded with a simple belief: every bride deserves access to exceptional makeup artistry, no matter where in Texas she's getting married.</p>
+                <p>What started as a single artist's passion for bridal beauty has grown into a network of elite, vetted professionals spanning cities across the Lone Star State. We saw that talented artists were working in isolation and brides were struggling to find trusted professionals — so we built the bridge between them.</p>
+                <p><strong>Our Mission:</strong> To connect every bride with a skilled, vetted artist who can bring her vision to life — with the consistency and quality of an established brand.</p>
+                <p><strong>Our Vision:</strong> To become the most trusted name in bridal beauty across Texas and beyond.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR STANDARDS -->
+    <section class="standards-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Our Standards</p>
+                <h2 class="section-title">What Sets Us Apart</h2>
+                <p class="section-subtitle">Every MoxietheMua artist meets rigorous standards before joining our network.</p>
+            </div>
+            <div class="standards-grid">
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                    </div>
+                    <h3>Rigorous Vetting</h3>
+                    <p>Every artist passes a comprehensive portfolio review, skills assessment, and professional background check before being accepted.</p>
+                </div>
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    </div>
+                    <h3>Ongoing Training</h3>
+                    <p>Continuous education, technique workshops, and certification requirements ensure our artists stay at the top of their craft.</p>
+                </div>
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3>Satisfaction Guarantee</h3>
+                    <p>Your special day deserves perfection. We stand behind our artists and are committed to your complete satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUES / PILLARS -->
+    <section class="why-moxie fade-in">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Our Values</p>
+                <h2 class="section-title">What We Believe</h2>
+                <p class="section-subtitle">The pillars that guide everything we do at MoxietheMua.</p>
+            </div>
+            <div class="pillars-grid">
+                <div class="pillar-item">
+                    <div class="pillar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <h3>Excellence</h3>
+                    <p>Only the best artists join our network. We set the bar high and keep it there.</p>
+                </div>
+                <div class="pillar-item">
+                    <div class="pillar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <h3>Inclusivity</h3>
+                    <p>Beauty for every skin tone, every style, every bride. Our artists celebrate diversity.</p>
+                </div>
+                <div class="pillar-item">
+                    <div class="pillar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3>Consistency</h3>
+                    <p>High standards at every location. Our brand promise means you get excellence wherever you are.</p>
+                </div>
+                <div class="pillar-item">
+                    <div class="pillar-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3>Community</h3>
+                    <p>Artists supporting artists. We grow together, learn together, and elevate the industry together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section class="founder-section fade-in">
+        <div class="founder-grid">
+            <div class="founder-image">
+                <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=600&q=80" alt="MoxietheMua Founder" loading="lazy">
+            </div>
+            <div class="founder-content">
+                <p class="section-label">Our Founder</p>
+                <h2>A Vision for Better Bridal Beauty</h2>
+                <p>MoxietheMua began with one artist's frustration: too many talented makeup professionals were working alone, while brides struggled to find reliable artists they could trust.</p>
+                <p>After years of building a successful solo career in bridal makeup across Austin, our founder realized the industry needed something different — a network where artists could thrive under a trusted brand, and brides could find guaranteed quality no matter their location.</p>
+                <p>Today, MoxietheMua connects vetted professionals with clients across Texas, providing the infrastructure, brand recognition, and support system that helps everyone succeed.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="stats-bar fade-in">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>8+</h3>
+                <p>Professional Artists</p>
+            </div>
+            <div class="stat-item">
+                <h3>6+</h3>
+                <p>Texas Cities</p>
+            </div>
+            <div class="stat-item">
+                <h3>300+</h3>
+                <p>Brides Served</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DUAL CTA -->
+    <section class="dual-cta fade-in">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Get Started</p>
+                <h2 class="section-title">Ready to Take the Next Step?</h2>
+            </div>
+            <div class="dual-cta-grid">
+                <div class="cta-box">
+                    <h3>Looking for an Artist?</h3>
+                    <p>Browse our network of vetted professionals and find the perfect artist for your special day.</p>
+                    <a href="artists.html" class="btn btn-primary">Find an Artist</a>
+                </div>
+                <div class="cta-box">
+                    <h3>Want to Join Our Team?</h3>
+                    <p>Are you a talented makeup artist? Join Texas' fastest-growing bridal beauty network.</p>
+                    <a href="join.html" class="btn btn-dark">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo-text">Moxie<span>theMua</span></div>
+                <p>Texas' premier bridal beauty network. Connecting brides with vetted, professional makeup artists across the Lone Star State.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/moxiethemua" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="artists.html">Find an Artist</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="join.html">Join Our Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Bridal Makeup</a></li>
+                    <li><a href="services.html">Special Events</a></li>
+                    <li><a href="services.html">Editorial &amp; Commercial</a></li>
+                    <li><a href="services.html">Makeup Education</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/moxiethemua" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MoxietheMua. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active')); });
+        navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); hamburger.setAttribute('aria-expanded', 'false'); }); });
+        const fadeObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+    </script>
+
+</body>
+</html>

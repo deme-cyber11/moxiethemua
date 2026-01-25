@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Team | MoxietheMua — Become a MoxietheMua Artist</title>
+    <meta name="description" content="Join MoxietheMua's network of elite bridal makeup artists. Build your beauty business with brand power, lead generation, and community support.">
+    <meta property="og:title" content="Join Our Team | MoxietheMua">
+    <meta property="og:description" content="Build your beauty business with Texas' premier bridal network.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .benefits-section { padding: var(--section-padding); background: var(--color-surface); }
+        .benefits-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; max-width: var(--container-max); margin: 0 auto; }
+        .benefit-card { background: var(--color-surface-alt); padding: 2.5rem 2rem; text-align: center; border: 1px solid var(--color-border); transition: all 0.3s ease; }
+        .benefit-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+        .benefit-icon { width: 60px; height: 60px; margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center; }
+        .benefit-icon svg { width: 44px; height: 44px; stroke: var(--color-primary); fill: none; stroke-width: 1.5; }
+        .benefit-card h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+        .benefit-card p { color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.7; }
+
+        .how-it-works .steps-grid { grid-template-columns: repeat(4, 1fr); }
+        .how-it-works .step-item::after { display: none; }
+
+        .requirements-section { padding: var(--section-padding); background: var(--color-surface); }
+        .requirements-list { max-width: 700px; margin: 0 auto; list-style: none; }
+        .requirements-list li { display: flex; align-items: flex-start; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--color-border); font-size: 1.05rem; }
+        .requirements-list li:last-child { border-bottom: none; }
+        .requirements-list li svg { width: 24px; height: 24px; stroke: var(--color-success); fill: none; stroke-width: 2; flex-shrink: 0; margin-top: 2px; }
+
+        .artist-testimonials { padding: var(--section-padding); background: var(--color-surface-alt); }
+
+        .application-section { padding: var(--section-padding); background: var(--color-surface); }
+        .application-form { max-width: 700px; margin: 0 auto; background: var(--color-surface-alt); padding: 3rem; border: 1px solid var(--color-border); }
+        .application-form h3 { font-size: 1.75rem; font-family: var(--font-display); margin-bottom: 0.5rem; text-align: center; font-weight: 400; }
+        .application-form > p { text-align: center; color: var(--color-text-muted); margin-bottom: 2rem; }
+        .checkbox-group { display: flex; flex-wrap: wrap; gap: 1rem; }
+        .checkbox-group label { display: flex; align-items: center; gap: 0.5rem; font-size: 0.95rem; cursor: pointer; }
+        .checkbox-group input { accent-color: var(--color-primary); }
+
+        @media (max-width: 1024px) { .benefits-grid { grid-template-columns: repeat(2, 1fr); } .how-it-works .steps-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 768px) { .benefits-grid { grid-template-columns: 1fr; } .how-it-works .steps-grid { grid-template-columns: 1fr; } .application-form { padding: 2rem 1.5rem; } }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <nav>
+            <a href="index.html" class="logo"><span class="logo-text">Moxie<span>theMua</span></span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="artists.html">Find an Artist</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="artists.html" class="nav-cta">Book Now</a></li>
+            </ul>
+            <button class="menu-toggle" id="hamburger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" style="background-image: linear-gradient(135deg, rgba(45,45,45,0.75), rgba(45,45,45,0.6)), url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=1920&q=80');">
+        <div class="hero-content">
+            <div class="hero-badge">Now Accepting Applications</div>
+            <h1>Build Your Beauty Business <span>with MoxietheMua</span></h1>
+            <p>Join a network of elite bridal artists. Grow your career with brand power, client leads, and a supportive community.</p>
+            <div class="hero-cta-group">
+                <a href="#application" class="btn btn-primary">Apply Now</a>
+                <a href="#why-join" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY JOIN -->
+    <section class="benefits-section fade-in" id="why-join">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Why Join</p>
+                <h2 class="section-title">Grow Your Career With Us</h2>
+                <p class="section-subtitle">Everything you need to build a thriving beauty business, backed by a trusted brand.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                    </div>
+                    <h3>Brand Power</h3>
+                    <p>Leverage an established, trusted name that clients already recognize and trust for premium bridal beauty.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <h3>Lead Generation</h3>
+                    <p>We bring clients directly to you through our website, social media, and marketing campaigns across Texas.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                    </div>
+                    <h3>Training &amp; Support</h3>
+                    <p>Ongoing education, workshops, and resources to keep your skills sharp and your business growing.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </div>
+                    <h3>Community</h3>
+                    <p>Connect with fellow professional artists who collaborate, share insights, and support each other's growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works fade-in">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">The Process</p>
+                <h2 class="section-title">How to Join</h2>
+                <p class="section-subtitle">Four simple steps to becoming a MoxietheMua artist.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>Apply Online</h3>
+                    <p>Submit your application and portfolio for review by our team.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>Interview &amp; Review</h3>
+                    <p>Meet with our team for a portfolio assessment and skills discussion.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>Onboarding</h3>
+                    <p>Complete brand training, set up your profile, and learn our tools.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h3>Start Booking</h3>
+                    <p>Begin accepting clients through the MoxietheMua platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REQUIREMENTS -->
+    <section class="requirements-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Requirements</p>
+                <h2 class="section-title">What We Look For</h2>
+            </div>
+            <ul class="requirements-list">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Minimum 2 years of professional makeup artistry experience</span>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Professional portfolio demonstrating range and skill across different looks and skin tones</span>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Valid cosmetology license or professional makeup certification</span>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Professional liability insurance (or willingness to obtain)</span>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Passion for bridal beauty and exceptional client service</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ARTIST TESTIMONIALS -->
+    <section class="artist-testimonials fade-in">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">From Our Artists</p>
+                <h2 class="section-title">What Our Artists Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"Joining MoxietheMua was the best decision for my career. I went from hustling for every client to having a steady stream of leads. The brand recognition alone is worth it."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">OT</div>
+                        <div class="author-info">
+                            <h4>Olivia Thompson</h4>
+                            <span>Dallas, TX &mdash; 2 years with MoxietheMua</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"The community is what I love most. Having other talented artists to bounce ideas off of, share tips with, and learn from has made me a better artist and a better business owner."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AJ</div>
+                        <div class="author-info">
+                            <h4>Aaliyah Johnson</h4>
+                            <span>Houston, TX &mdash; 1.5 years with MoxietheMua</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"As a newer artist, having the MoxietheMua brand behind me gave me instant credibility. The training and support helped me level up my skills faster than I ever could alone."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">TR</div>
+                        <div class="author-info">
+                            <h4>Taylor Rodriguez</h4>
+                            <span>Fort Worth, TX &mdash; 1 year with MoxietheMua</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">FAQ</p>
+                <h2 class="section-title">Questions About Joining</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">What are the fees to join?</button>
+                    <div class="faq-answer"><p>There is a one-time onboarding fee that covers your profile setup, brand materials, and initial training. After that, a small monthly platform fee keeps you connected to our marketing, tools, and lead generation system.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do I get exclusive territory?</button>
+                    <div class="faq-answer"><p>Territories are non-exclusive, meaning multiple artists may serve the same area. However, we carefully manage the number of artists per market to ensure healthy demand for everyone.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How are leads distributed?</button>
+                    <div class="faq-answer"><p>Client leads are distributed based on location, availability, and specialties. Clients browse our directory and choose their preferred artist, so a strong profile and great reviews help you stand out.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I keep my own clients?</button>
+                    <div class="faq-answer"><p>Yes! You're welcome to bring your existing clients into the MoxietheMua platform. You maintain all your existing relationships while gaining access to new leads through our network.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What support is provided?</button>
+                    <div class="faq-answer"><p>We provide marketing materials, a professional profile page, booking tools, ongoing education workshops, and access to our artist community. You also get dedicated support from our team for any questions or needs.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- APPLICATION FORM -->
+    <section class="application-section fade-in" id="application">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Apply Now</p>
+                <h2 class="section-title">Start Your Application</h2>
+                <p class="section-subtitle">Tell us about yourself and your artistry. We review every application personally.</p>
+            </div>
+            <div class="application-form">
+                <form>
+                    <div class="form-group">
+                        <label for="appName">Full Name *</label>
+                        <input type="text" id="appName" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="appEmail">Email *</label>
+                            <input type="email" id="appEmail" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appPhone">Phone *</label>
+                            <input type="tel" id="appPhone" placeholder="(555) 123-4567" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="appCity">City *</label>
+                            <input type="text" id="appCity" placeholder="Your city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appState">State *</label>
+                            <input type="text" id="appState" value="TX" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="appExperience">Years of Experience *</label>
+                        <select id="appExperience" required>
+                            <option value="">Select experience level</option>
+                            <option value="1-2">1-2 years</option>
+                            <option value="3-5">3-5 years</option>
+                            <option value="6-10">6-10 years</option>
+                            <option value="10+">10+ years</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Specialties *</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="specialty" value="bridal"> Bridal</label>
+                            <label><input type="checkbox" name="specialty" value="events"> Events</label>
+                            <label><input type="checkbox" name="specialty" value="editorial"> Editorial</label>
+                            <label><input type="checkbox" name="specialty" value="commercial"> Commercial</label>
+                            <label><input type="checkbox" name="specialty" value="lessons"> Lessons</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="appPortfolio">Portfolio Link</label>
+                        <input type="url" id="appPortfolio" placeholder="https://your-portfolio.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="appInstagram">Instagram Handle</label>
+                        <input type="text" id="appInstagram" placeholder="@yourusername">
+                    </div>
+                    <div class="form-group">
+                        <label for="appMessage">Why do you want to join MoxietheMua? *</label>
+                        <textarea id="appMessage" placeholder="Tell us about yourself, your experience, and why you'd be a great fit..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo-text">Moxie<span>theMua</span></div>
+                <p>Texas' premier bridal beauty network. Connecting brides with vetted, professional makeup artists across the Lone Star State.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/moxiethemua" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="artists.html">Find an Artist</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="join.html">Join Our Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Bridal Makeup</a></li>
+                    <li><a href="services.html">Special Events</a></li>
+                    <li><a href="services.html">Editorial &amp; Commercial</a></li>
+                    <li><a href="services.html">Makeup Education</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/moxiethemua" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MoxietheMua. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active')); });
+        navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); hamburger.setAttribute('aria-expanded', 'false'); }); });
+        const fadeObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const wasActive = item.classList.contains('active');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+                if (!wasActive) item.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find an Artist | MoxietheMua — Vetted Makeup Artists Across Texas</title>
+    <meta name="description" content="Browse MoxietheMua's network of vetted, professional makeup artists across Texas. Filter by location, specialty, and availability.">
+    <meta property="og:title" content="Find an Artist | MoxietheMua">
+    <meta property="og:description" content="Browse vetted, professional makeup artists across Texas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .no-results { text-align: center; padding: 3rem; display: none; }
+        .no-results h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+        .no-results p { color: var(--color-text-muted); }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <nav>
+            <a href="index.html" class="logo"><span class="logo-text">Moxie<span>theMua</span></span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="artists.html">Find an Artist</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="join.html">Join Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="artists.html" class="nav-cta">Book Now</a></li>
+            </ul>
+            <button class="menu-toggle" id="hamburger" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+        </nav>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <h1>Find Your Perfect Artist</h1>
+        <p>Browse our network of vetted, professional makeup artists across Texas.</p>
+    </section>
+
+    <!-- SEARCH BAR -->
+    <div class="container">
+        <div class="search-bar">
+            <form id="searchForm">
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <select id="location">
+                        <option value="">All Locations</option>
+                        <option value="Austin">Austin, TX</option>
+                        <option value="Houston">Houston, TX</option>
+                        <option value="Dallas">Dallas, TX</option>
+                        <option value="San Antonio">San Antonio, TX</option>
+                        <option value="Fort Worth">Fort Worth, TX</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Type</label>
+                    <select id="service">
+                        <option value="">All Services</option>
+                        <option value="bridal">Bridal</option>
+                        <option value="events">Events</option>
+                        <option value="editorial">Editorial</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="lessons">Lessons</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Availability</label>
+                    <input type="date" id="date">
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ARTIST DIRECTORY -->
+    <section class="artists-directory fade-in">
+        <div class="container">
+            <div class="artists-grid" id="artistsGrid">
+
+                <!-- Jessica Martinez -->
+                <div class="artist-card" data-city="Austin" data-services="bridal,editorial">
+                    <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=400&q=80" alt="Jessica Martinez" class="artist-image" loading="lazy">
+                    <div class="artist-info">
+                        <h3>Jessica Martinez</h3>
+                        <div class="artist-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="white"></circle></svg>
+                            Austin, TX
+                        </div>
+                        <div class="artist-specialties">
+                            <span class="specialty-tag">Bridal</span>
+                            <span class="specialty-tag">Editorial</span>
+                        </div>
+                        <div class="artist-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span>5.0 (48 reviews)</span>
+                        </div>
+                    </div>
+                    <a href="artist-profile.html" class="artist-cta">View Profile</a>
+                </div>
+
+                <!-- Aaliyah Johnson -->
+                <div class="artist-card" data-city="Houston" data-services="bridal,events">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=400&q=80" alt="Aaliyah Johnson" class="artist-image" loading="lazy">
+                    <div class="artist-info">
+                        <h3>Aaliyah Johnson</h3>
+                        <div class="artist-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="white"></circle></svg>
+                            Houston, TX
+                        </div>
+                        <div class="artist-specialties">
+                            <span class="specialty-tag">Bridal</span>
+                            <span class="specialty-tag">Events</span>
+                        </div>
+                        <div class="artist-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span>5.0 (36 reviews)</span>
+                        </div>
+                    </div>
+                    <a href="artist-profile.html" class="artist-cta">View Profile</a>
+                </div>
+
+                <!-- Sophia Chen -->
+                <div class="artist-card" data-city="Dallas" data-services="editorial,commercial">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Sophia Chen" class="artist-image" loading="lazy">
+                    <div class="artist-info">
+                        <h3>Sophia Chen</h3>
+                        <div class="artist-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="white"></circle></svg>
+                            Dallas, TX
+                        </div>
+                        <div class="artist-specialties">
+                            <span class="specialty-tag">Editorial</span>
+                            <span class="specialty-tag">Commercial</span>
+                        </div>
+                        <div class="artist-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span>4.9 (52 reviews)</span>
+                        </div>
+                    </div>
+                    <a href="artist-profile.html" class="artist-cta">View Profile</a>
+                </div>
+
+                <!-- Maya Williams -->
+                <div class="artist-card" data-city="San Antonio" data-services="bridal,lessons">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Maya Williams" class="artist-image" loading="lazy">
+                    <div class="artist-info">
+                        <h3>Maya Williams</h3>
+                        <div class="artist-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="white"></circle></svg>
+                            San Antonio, TX
+                        </div>
+                        <div class="artist-specialties">
+                            <span class="specialty-tag">Bridal</span>
+                            <span class="specialty-tag">Lessons</span>
+                        </div>
+                        <div class="artist-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span>5.0 (29 reviews)</span>
+                        </div>
+                    </div>
+                    <a href="artist-profile.html" class="artist-cta">View Profile</a>
+                </div>
+
+                <!-- Lauren Davis -->
+                <div class="artist-card" data-city="Austin" data-services="bridal,events">
+                    <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=400&q=80" alt="Lauren Davis" class="artist-image" loading="lazy">
+                    <div class="artist-info">
+                        <h3>Lauren Davis</h3>
+                        <div class="artist-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="white"></circle></svg>
+                            Austin, TX
+                        </div>
+                        <div class="artist-specialties">
+                            <span class="specialty-tag">Bridal</span>
+                            <span class="specialty-tag">Events</span>
+                        </div>
+                        <div class="artist-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span>4.9 (41 reviews)</span>
+                        </div>
+                    </div>
+                    <a href="artist-profile.html" class="artist-cta">View Profile</a>
+                </div>
+
+                <!-- Olivia Thompson -->
+                <div class="artist-card" data-city="Dallas" data-services="bridal,events,editorial">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80" alt="Olivia Thompson" class="artist-image" loading="lazy">
+                    <div class="artist-info">
+                        <h3>Olivia Thompson</h3>
+                        <div class="artist-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="white"></circle></svg>
+                            Dallas, TX
+                        </div>
+                        <div class="artist-specialties">
+                            <span class="specialty-tag">Bridal</span>
+                            <span class="specialty-tag">Events</span>
+                            <span class="specialty-tag">Editorial</span>
+                        </div>
+                        <div class="artist-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span>5.0 (67 reviews)</span>
+                        </div>
+                    </div>
+                    <a href="artist-profile.html" class="artist-cta">View Profile</a>
+                </div>
+
+                <!-- Brianna Scott -->
+                <div class="artist-card" data-city="Houston" data-services="bridal,commercial">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Brianna Scott" class="artist-image" loading="lazy">
+                    <div class="artist-info">
+                        <h3>Brianna Scott</h3>
+                        <div class="artist-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="white"></circle></svg>
+                            Houston, TX
+                        </div>
+                        <div class="artist-specialties">
+                            <span class="specialty-tag">Bridal</span>
+                            <span class="specialty-tag">Commercial</span>
+                        </div>
+                        <div class="artist-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span>4.8 (33 reviews)</span>
+                        </div>
+                    </div>
+                    <a href="artist-profile.html" class="artist-cta">View Profile</a>
+                </div>
+
+                <!-- Taylor Rodriguez -->
+                <div class="artist-card" data-city="Fort Worth" data-services="bridal,events,lessons">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Taylor Rodriguez" class="artist-image" loading="lazy">
+                    <div class="artist-info">
+                        <h3>Taylor Rodriguez</h3>
+                        <div class="artist-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3" fill="white"></circle></svg>
+                            Fort Worth, TX
+                        </div>
+                        <div class="artist-specialties">
+                            <span class="specialty-tag">Bridal</span>
+                            <span class="specialty-tag">Events</span>
+                            <span class="specialty-tag">Lessons</span>
+                        </div>
+                        <div class="artist-rating">
+                            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span>5.0 (22 reviews)</span>
+                        </div>
+                    </div>
+                    <a href="artist-profile.html" class="artist-cta">View Profile</a>
+                </div>
+
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults">
+                <h3>No Artists Found</h3>
+                <p>Try adjusting your search filters or <a href="contact.html">contact us</a> for help finding an artist.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN CTA -->
+    <section class="join-cta fade-in">
+        <div class="container">
+            <p class="section-label">For Artists</p>
+            <h2>Are You a Makeup Artist?</h2>
+            <p>Join our growing network of professional bridal artists across Texas.</p>
+            <a href="join.html" class="btn btn-primary">Apply Now</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo-text">Moxie<span>theMua</span></div>
+                <p>Texas' premier bridal beauty network. Connecting brides with vetted, professional makeup artists across the Lone Star State.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/moxiethemua" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="#" aria-label="TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="artists.html">Find an Artist</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="join.html">Join Our Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="services.html">Bridal Makeup</a></li>
+                    <li><a href="services.html">Special Events</a></li>
+                    <li><a href="services.html">Editorial &amp; Commercial</a></li>
+                    <li><a href="services.html">Makeup Education</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.instagram.com/moxiethemua" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">TikTok</a></li>
+                    <li><a href="contact.html">Get in Touch</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MoxietheMua. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
+
+        // Mobile menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => { navLinks.classList.toggle('active'); hamburger.setAttribute('aria-expanded', navLinks.classList.contains('active')); });
+        navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); hamburger.setAttribute('aria-expanded', 'false'); }); });
+
+        // Fade-in
+        const fadeObserver = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); fadeObserver.unobserve(entry.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+
+        // Filtering
+        const searchForm = document.getElementById('searchForm');
+        const artistCards = document.querySelectorAll('.artist-card');
+        const noResults = document.getElementById('noResults');
+
+        searchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const location = document.getElementById('location').value;
+            const service = document.getElementById('service').value;
+            let visibleCount = 0;
+
+            artistCards.forEach(card => {
+                const cardCity = card.dataset.city;
+                const cardServices = card.dataset.services;
+                let show = true;
+
+                if (location && cardCity !== location) show = false;
+                if (service && !cardServices.includes(service)) show = false;
+
+                card.style.display = show ? '' : 'none';
+                if (show) visibleCount++;
+            });
+
+            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        });
+    </script>
+
+</body>
+</html>
